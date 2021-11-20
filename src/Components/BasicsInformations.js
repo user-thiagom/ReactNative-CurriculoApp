@@ -23,7 +23,15 @@ const styles = StyleSheet.create({
         // flex:1,
         justifyContent: 'flex-start',
         alignItems: 'center',
-        backgroundColor: 'red'
+        // backgroundColor: '#bbdefb',
+        width: '100%',
+        // borderBottomWidth:10,
+        // borderRadius: 200,
+        // borderTopWidth:10,
+        // borderColor: '#1d3557',
+        padding: 10,
+        // borderWidth: 5,
+        // margin: 10,
     },
     text: {
         alignItems: 'center'

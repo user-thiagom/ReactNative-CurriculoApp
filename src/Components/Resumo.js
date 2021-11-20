@@ -5,7 +5,7 @@ import { Headline, Paragraph } from 'react-native-paper'
 const Resumo = ({texto}) => {
     return (
         <View style={styles.container}>
-            <Headline>Resumo</Headline>
+            <Headline style={styles.title}>Resumo</Headline>
             <Paragraph style={styles.paragraph}>{texto || "Não Informado"}</Paragraph>
         </View>
     )
@@ -18,9 +18,20 @@ const styles = StyleSheet.create({
         
         justifyContent: 'flex-start',
         alignItems: 'center',
-        borderWidth: 5
+        // borderWidth: 5,
+        borderTopWidth: 5,
+        borderRadius: 35,
+        borderBottomWidth: 5,
     },
     paragraph: {
         textAlign:'center',
+        
+    },
+    title: {
+        color: '#0d47a1',
+        textTransform: 'uppercase',
+        textShadowColor: '#0466c8',
+        textShadowOffset: {width: 1, height: 1},
+        textShadowRadius: 1
     }
 })

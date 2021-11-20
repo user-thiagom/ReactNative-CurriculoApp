@@ -19,7 +19,7 @@ const Qualification = ({formacoes = []}) => {
 
     return (
         <View style={styles.container}>
-            <Headline style={styles.title}>Experiências</Headline>
+            <Headline style={styles.title}>Formação</Headline>
             {isEmpty ? <></>: formacoes.map(
                 formacao => <Card formacao={formacao} key={formacao.id}/>
             )}
@@ -32,20 +32,33 @@ export default Qualification
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: 'blue',
+        // backgroundColor: 'blue',
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'center',
         alignItems: 'center',
+        borderTopWidth: 5,
+        borderRadius: 35,
+        borderBottomWidth: 5,
+        marginTop: 2
     },
     card: {
-        backgroundColor: 'green',
+        // backgroundColor: 'green',
         justifyContent: 'center',
         alignItems: 'center',
-        width: '90%'
+        width: '90%',
+        borderRadius: 50,
+        borderLeftWidth: 2,
+        borderRightWidth: 2,
+        marginTop: 5
     },
     title: {
-        textAlign: 'center'
+        textAlign: 'center',
+        color: '#0d47a1',
+        textTransform: 'uppercase',
+        textShadowColor: '#0466c8',
+        textShadowOffset: {width: 1, height: 1},
+        textShadowRadius: 1
     },
     line: {
         borderWidth: 1,
